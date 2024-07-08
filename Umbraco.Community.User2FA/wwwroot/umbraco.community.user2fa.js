@@ -1,7 +1,6 @@
-const n = (o, e) => {
-  console.log("Hello from Umbraco.Community.User2FA");
+const o = (t, n) => {
 };
 export {
-  n as onInit
+  o as onInit
 };
 //# sourceMappingURL=umbraco.community.user2fa.js.map
