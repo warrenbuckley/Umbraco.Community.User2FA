@@ -1,12 +1,5 @@
 import { UmbEntryPointOnInit } from '@umbraco-cms/backoffice/extension-api';
 export const onInit: UmbEntryPointOnInit = (_host, _extensionRegistry) => {
-
-    console.log('Hello from Umbraco.Community.User2FA');
-
-    // We can register many manifests at once via code 
-    // as opposed to a long umbraco-package.json file
-    // _extensionRegistry.registerMany([
-    //     ...entityActionManifests,
-    //     ...modalManifests
-    // ]);
+    // Empty stub if we want to register something in the future
+    // For now we register the only manifest directly in the umbraco-package.json as it requires no backing JS
 };
