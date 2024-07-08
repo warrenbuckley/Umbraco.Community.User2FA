@@ -1,42 +1,30 @@
-# 💻 Umbraco Repo Template 
-This is a GitHub Template repo - that when new repos are created from this template will trigger a GitHub Actions build and scaffold the necessary files to have a project ready to work with for Umbraco v14+ package development
+# Umbraco Community User2FA
+This is a simple package designed for Umbraco V14+ that adds Two Factor Auth (2FA) login to Umbraco backoffice users.
 
-## How do I use this ?
-* Click the Use this Template button from the GitHub repo page here and select Create a new repository.
-* Alternatively [follow this link and give your new repoistory a name](https://github.com/new?template_name=Umbraco-Repo-Template&template_owner=warrenbuckley)
+This is based on an Umbraco Docs tutorial, howver I saw this tutorial as mostly plumbing of creating C# files in order to add 2FA and thus package is designed to help save you time in creating these files over and over again.
 
-## What happens when I use this repository template
-* GitHub Actions immedaitely run and peform steps to setup an Umbraco project ready for package development
-* You can see each indvidual step to follow along to see what it is doing on your behalf
-* Commits the changes to the main branch
-* Disables the GitHub Action so it never runs again
+## How to use
+* Install the Nuget package into your Umbraco V14 site
+* Login to Umbraco backoffice
+* Click User avatar top right 
+* Click button labeled Configure Two Factor
+* Enable Two Factor by scanning QR code with a phone such as
 
-## What does it create for me ? 
-| Project | Notes |
-|--------|--------|
-| REPO.Website | This project is an sample Umbraco site that allows you to easily test the site |
-| REPO.Now | This is an RCL that the client project will copy files into wwwroot. This projects can be used to write any C# code such as APIControllers |
-| REPO.Client | Open this folder with VSCode editor and start working with the TypeScript files to extend Umbraco backoffice |
+## 2FA Mobile Applications
+* Microsoft Authenticator [(iOS)](https://apps.apple.com/us/app/microsoft-authenticator/id983156458) | [(Android)](https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=en_GB)
+* Google Authenticator [(iOS)](https://apps.apple.com/us/app/google-authenticator/id388497605) | [(Android)](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en_GB&pli=1)
+* Twilio Authy [(iOS)](https://apps.apple.com/us/app/twilio-authy/id494168017) | [(Android)](https://play.google.com/store/apps/details?id=com.authy.authy)
 
-## Its finished, now what?
-- [ ] Clone the repository down to your local machine
-- [ ] Open the Solution file with Visual Studio or Jetbrains Rider
-- [ ] Build the Solution
-- [ ] Run the Website project
-- [ ] Install Umbraco with a user and preferred database type
-- [ ] Once logged into the backoffice, open your browser dev tools and notice the hello world message in the console
-- [ ] Ensure NodeJS is installed - recommend using 20.x LTS version
-- [ ] Navigate to the `Client` folder
-- [ ] Run `npm install`
-- [ ] Run `npm run watch` Vite is now watching the TypeScript files
-- [ ] Ammend the index.ts file and update the comment of the console.log
-- [ ] Watch as the page will reload and your new message appears in the console
-- [ ] Go forth and happy hacking
+I have also verified this to work with 1Password Desktop App to save/store the 2FA QR code and generate the correct pin.
 
-## Other resources
-* [Umbraco Docs](https://docs.umbraco.com/umbraco-cms/tutorials/creating-a-custom-dashboard)
-* [UUI Library](https://uui.umbraco.com/?path=/docs/uui-action-bar--docs)
-* [V14 Storybook Docs](https://apidocs.umbraco.com/v14/ui)
+
+### Contributing
+The example website project has a backoffice user account setup ready to have a 2FA account applied to it, you can login in with the following credentials.
+
+| Username              | Password      |
+| --------------------- | ------------- |
+| warren@hackmakedo.com | password1234  |
+
 
 ---
 
