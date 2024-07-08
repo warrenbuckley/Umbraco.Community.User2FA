@@ -9,13 +9,19 @@
   <PropertyGroup>
     <PackageId>Umbraco.Community.User2FA</PackageId>
     <Product>Umbraco.Community.User2FA</Product>
-    <Title>Umbraco.Community.User2FA</Title>
-    <Description>...</Description>
-    <PackageTags>umbraco plugin package</PackageTags>
+    <Title>Umbraco Community User 2FA</Title>
+    <Description>A simple package to add 2FA login to Umbraco backoffice users</Description>
+    <PackageTags>umbraco;umbraco14;umbraco login;umbraco-marketplace;</PackageTags>
+    <PackageProjectUrl>https://github.com/warrenbuckley/Umbraco.Community.User2FA</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/warrenbuckley/Umbraco.Community.User2FA</RepositoryUrl>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
 
   <ItemGroup>
+    <PackageReference Include="GoogleAuthenticator" Version="3.2.0" />
+    <PackageReference Include="Umbraco.Cms.Api.Management" Version="14.0.0" />
     <PackageReference Include="Umbraco.Cms.Web.Website" Version="14.0.0" />
     <PackageReference Include="Umbraco.Cms.Web.Common" Version="14.0.0" />
   </ItemGroup>
