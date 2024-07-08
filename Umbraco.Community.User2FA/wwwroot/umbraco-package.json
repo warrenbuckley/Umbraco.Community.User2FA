@@ -1,15 +1,18 @@
 {
     "$schema": "../../Umbraco.Community.User2FA.Website/umbraco-package-schema.json",
     "id": "umbraco.community.user2fa",
-    "name": "Umbraco.Community.User2FA",
+    "name": "Umraco Community User 2FA",
     "allowPackageTelemetry": true,
     "version": "1.0.0",
     "extensions": [
-        {
-          "name": "Umbraco.Community.User2FA EntryPoint",
-          "alias": "umbraco.community.user2fa.entrypoint",
-          "type": "backofficeEntryPoint",
-          "js": "/App_Plugins/Umbraco.Community.User2FA/umbraco.community.user2fa.js"
+      {
+        "type": "mfaLoginProvider",
+        "alias": "umbraco.community.user2fa.loginprovider",
+        "name": "Umbraco Community User 2FA Login Provider",
+        "forProviderName": "Umbraco.Community.User2FA.Authenticator",
+        "meta": {
+          "label": "Umbraco User 2FA"
         }
-      ]
+      }
+    ]
 }
