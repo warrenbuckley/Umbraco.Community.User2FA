@@ -1,5 +1,6 @@
 ﻿
 using Google.Authenticator;
+using Microsoft.Extensions.Options;
 using Umbraco.Cms.Core.Models.Membership;
 using Umbraco.Cms.Core.Security;
 using Umbraco.Cms.Core.Services;
@@ -11,12 +12,14 @@ namespace Umbraco.Community.User2FA.Auth
 		public const string Name = "Umbraco.Community.User2FA.Authenticator";
 
 		private readonly IUserService _userService;
+		private readonly TwoFactorAuthOptions _options;
 
-		public UmbracoUserAppAuthenticator(IUserService userService)
+		public UmbracoUserAppAuthenticator(IUserService userService, IOptionsMonitor<TwoFactorAuthOptions> options)
 		{
 			_userService = userService;
+			_options = options.CurrentValue;
 		}
-	
+
 		public string ProviderName => Name;
 	
 		public async Task<ISetupTwoFactorModel> GetSetupDataAsync(Guid userOrMemberKey, string secret)
@@ -26,7 +29,7 @@ namespace Umbraco.Community.User2FA.Auth
 			ArgumentNullException.ThrowIfNull(user);
 
 			var twoFactorAuthenticator = new TwoFactorAuthenticator();
-			SetupCode setupInfo = twoFactorAuthenticator.GenerateSetupCode("My application name", user.Username, secret, false); // TODO Add the Application name via config
+			SetupCode setupInfo = twoFactorAuthenticator.GenerateSetupCode(_options.AuthenticatorIssuerName, user.Username, secret, false);
 			return await Task.FromResult<ISetupTwoFactorModel>(new TwoFactorAuthInfo()
 			{
 				QrCodeSetupImageUrl = setupInfo.QrCodeSetupImageUrl,

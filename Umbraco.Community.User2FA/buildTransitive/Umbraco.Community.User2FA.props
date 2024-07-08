@@ -1,0 +1,5 @@
+<Project>
+	<ItemGroup>
+		<UmbracoJsonSchemaFiles Include="$(MSBuildThisFileDirectory)..\appsettings-schema.umbraco.community.user2fa.json" Weight="-80" />
+	</ItemGroup>
+</Project>
