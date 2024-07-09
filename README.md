@@ -17,6 +17,27 @@ This is based on an Umbraco Docs tutorial, howver I saw this tutorial as mostly 
 
 I have also verified this to work with 1Password Desktop App to save/store the 2FA QR code and generate the correct pin.
 
+## Configuration
+
+| Configuration Key					| Description |
+| ---------------------------------	| ----------- |
+| `User2FA:AuthenticatorIssuerName` | This is the name that will be displayed in the 2FA app when you scan the QR code, this is useful if you have multiple Umbraco sites and want to differentiate between them. |
+
+```json
+{
+	...
+
+	"Umbraco": {
+		...
+	},
+	"User2FA": {
+		"AuthenticatorIssuerName": "My Awesome Website"
+	}
+	
+	...
+}
+```
+
 
 ### Contributing
 The example website project has a backoffice user account setup ready to have a 2FA account applied to it, you can login in with the following credentials.
