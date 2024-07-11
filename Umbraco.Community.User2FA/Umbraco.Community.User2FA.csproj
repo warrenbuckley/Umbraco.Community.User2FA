@@ -18,6 +18,7 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<Copyright>Warren Buckley</Copyright>
 	</PropertyGroup>
 
 	<ItemGroup>
