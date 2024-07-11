@@ -17,6 +17,7 @@
 		<IncludeSymbols>True</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -24,6 +25,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Include="..\LICENSE">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
 		<None Include="..\README.md" Pack="true" PackagePath="\" />
 		<None Include="..\appsettings-schema.umbraco.community.user2fa.json" Pack="true" PackagePath="\" />
 	</ItemGroup>
