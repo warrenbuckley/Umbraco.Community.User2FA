@@ -47,6 +47,9 @@ The example website project has a backoffice user account setup ready to have a 
 | warren@hackmakedo.com | password1234  |
 
 
+#### Attribution
+<a href="https://www.flaticon.com/free-icons/qr-code" title="qr code icons">Qr code icons created by small.smiles - Flaticon</a>
+
 ---
 
 _Lovingly crafted for you by [Warren Buckley](https://github.com/sponsors/warrenbuckley)❤️_<br/>
