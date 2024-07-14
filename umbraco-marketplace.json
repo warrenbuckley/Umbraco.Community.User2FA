@@ -1,6 +1,6 @@
 {
     "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
-    "Title": "",
+    "Title": "2FA User Login",
     "Tags": [ "2FA", "Two Factor Auth", "MFA", "Multi Factor Auth", "Google Authenticator", "Microsoft Authenticator", "Authy"],
     "AuthorDetails": {
         "Name": "Warren Buckley",
