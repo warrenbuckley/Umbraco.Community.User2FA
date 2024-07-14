@@ -48,7 +48,7 @@ The example website project has a backoffice user account setup ready to have a 
 
 
 #### Attribution
-<a href="https://www.flaticon.com/free-icons/qr-code" title="qr code icons">Qr code icons created by small.smiles - Flaticon</a>
+[QR Code icons created by small.smiles - Flaticon](https://www.flaticon.com/free-icons/qr-code)
 
 ---
 
