@@ -36,9 +36,9 @@
 
 	<ItemGroup>
 		<PackageReference Include="GoogleAuthenticator" Version="3.2.0" />
-		<PackageReference Include="Umbraco.Cms.Api.Management" Version="14.0.0" />
+		<PackageReference Include="Umbraco.Cms.Api.Management" Version="14.1.2" />
 		<PackageReference Include="Umbraco.Cms.Web.Website" Version="14.0.0" />
-		<PackageReference Include="Umbraco.Cms.Web.Common" Version="14.0.0" />
+		<PackageReference Include="Umbraco.Cms.Web.Common" Version="14.1.2" />
 	</ItemGroup>
 
 </Project>
