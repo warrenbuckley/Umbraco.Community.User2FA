@@ -2,8 +2,8 @@
     "$schema": "../../Umbraco.Community.User2FA.Website/umbraco-package-schema.json",
     "id": "umbraco.community.user2fa",
     "name": "Umraco Community User 2FA",
-    "allowPackageTelemetry": true,
-    "version": "1.0.0",
+    "allowTelemetry": true,
+    "version": "1.1.0",
     "extensions": [
       {
         "type": "mfaLoginProvider",
