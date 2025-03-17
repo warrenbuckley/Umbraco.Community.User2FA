@@ -19,6 +19,7 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<Copyright>Warren Buckley</Copyright>
+		<PackageIcon>Umbraco.Community.User2FA.png</PackageIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -32,6 +33,7 @@
 		</None>
 		<None Include="..\README.md" Pack="true" PackagePath="\" />
 		<None Include="..\appsettings-schema.umbraco.community.user2fa.json" Pack="true" PackagePath="\" />
+		<None Include="..\Umbraco.Community.User2FA.png" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 	<ItemGroup>
