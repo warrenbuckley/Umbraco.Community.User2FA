@@ -1,10 +1,10 @@
 # Umbraco Community User2FA
-This is a simple package designed for Umbraco V14+ that adds Two Factor Auth (2FA) login to Umbraco backoffice users.
+This is a simple package designed for Umbraco V17+ that adds Two Factor Auth (2FA) login to Umbraco backoffice users.
 
 This is based on an Umbraco Docs tutorial, howver I saw this tutorial as mostly plumbing of creating C# files in order to add 2FA and thus package is designed to help save you time in creating these files over and over again.
 
 ## How to use
-* Install the Nuget package into your Umbraco V14 site
+* Install the Nuget package into your Umbraco V17 site
 * Login to Umbraco backoffice
 * Click User avatar top right 
 * Click button labeled Configure Two Factor

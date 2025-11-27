@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.Community.User2FA.Website", "Umbraco.Community.User2FA.Website\Umbraco.Community.User2FA.Website.csproj", "{3C41540E-7D1C-450D-8C46-F57AF42A9E25}"
 EndProject
@@ -9,6 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.Community.User2FA",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{CFA98E23-39E4-4E0E-AB84-8B6EA57226A7}"
 	ProjectSection(SolutionItems) = preProject
+		build.ps1 = build.ps1
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -29,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C7E11AF-954A-4276-B20B-E08FCB83D9F4}
 	EndGlobalSection
 EndGlobal
