@@ -2,7 +2,7 @@
 $projectFile = "./Umbraco.Community.User2FA/Umbraco.Community.User2FA.csproj"
 $configuration = "Release"
 $outputDirectory = "./build.out"
-$version = "18.0.0"
+$version = "19.0.0"
 $packageJsonPath = "./Umbraco.Community.User2FA/wwwroot/umbraco-package.json"
 
 # Delete all files in the output directory

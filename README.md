@@ -1,10 +1,21 @@
 # Umbraco Community User2FA
-This is a simple package designed for Umbraco V17+ that adds Two Factor Auth (2FA) login to Umbraco backoffice users.
+This is a simple package designed for Umbraco V17+ (see [version compatibility](#version-compatibility)) that adds Two Factor Auth (2FA) login to Umbraco backoffice users.
 
 This is based on an Umbraco Docs tutorial, howver I saw this tutorial as mostly plumbing of creating C# files in order to add 2FA and thus package is designed to help save you time in creating these files over and over again.
 
+## Version compatibility
+The package major version matches the Umbraco major version it supports.
+
+| Package version | Umbraco version |
+|-----------------|-----------------|
+| 19.x            | 19              |
+| 18.x            | 18              |
+| 17.x            | 17              |
+
+> **Upgrading a site to Umbraco 19?** If your build fails with `ApplyCompressionNegotiation ... Endpoints not found for related asset`, add `<CompressionEnabled>false</CompressionEnabled>` to your site's `.csproj` (the project containing the `/umbraco` folder). Umbraco has recommended this since v15 and the `dotnet new umbraco` template already includes it, but sites missing it fail to build on Umbraco 19. This is a site setting, not something this package needs. See Umbraco's docs on [handling precompressed files](https://docs.umbraco.com/umbraco-cms/19.latest/get-started/upgrading-and-migrating/version-specific#handling-precompressed-files).
+
 ## How to use
-* Install the Nuget package into your Umbraco V17 site
+* Install the Nuget package version matching your Umbraco major version
 * Login to Umbraco backoffice
 * Click User avatar top right 
 * Click button labeled Configure Two Factor
